@@ -1,0 +1,5 @@
+string name
+---
+int32 mapHeight
+int32 mapWidth
+string base64Data

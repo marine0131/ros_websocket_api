@@ -1,0 +1,7 @@
+string name
+string is_download_goals
+---
+string mapFile
+string yamlFile
+string goalsFile
+string msg

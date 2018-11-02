@@ -1,0 +1,5 @@
+string request
+---
+GridPoint[] gridPoint
+string mapInfo
+string msg

@@ -1,0 +1,18 @@
+<launch>  
+
+	<node pkg="tf" type="static_transform_publisher" name="imu_broadcaster"   args="0.12 0 0.7 0 0 0 base_link imu 50" />
+	<node pkg="tf" type="static_transform_publisher" name="laser_broadcaster" args="0.21 0 0.21 0 0 0 1 base_link laser 50"  />
+	<node pkg="tf" type="static_transform_publisher" name="ultra1_broadcaster" args="0.25 0.0 0.70 0 0 0  base_link ut1 50"  />
+	<node pkg="tf" type="static_transform_publisher" name="ultra2_broadcaster" args="0.125 -0.217 0.70 -1.05 0 0  base_link ut2 50"  />
+	<node pkg="tf" type="static_transform_publisher" name="ultra3_broadcaster" args="-0.125 -0.217 0.70 -2.1 0 0  base_link ut3 50"  />
+	<node pkg="tf" type="static_transform_publisher" name="ultra4_broadcaster" args="-0.25 0.0 0.70 -3.14 0 0  base_link ut4 50"  />
+	<node pkg="tf" type="static_transform_publisher" name="ultra5_broadcaster" args="-0.125 0.217 0.70 2.1 0 0  base_link ut5 50"  />
+	<node pkg="tf" type="static_transform_publisher" name="ultra6_broadcaster" args="0.125 0.217 0.70 1.05 0 0  base_link ut6 50"  />
+	
+	<!--map rename-->
+	<node name="grid_sonar_server" pkg="api" type="grid_sonar_server.py" output ="screen">
+        <param name='sonar_frame' type='string' value='ut1,ut2,ut3,ut4,ut5,ut6'/>
+    </node>
+
+
+</launch>

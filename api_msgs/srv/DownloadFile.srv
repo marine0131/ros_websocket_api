@@ -1,0 +1,5 @@
+string name
+---
+int32 size
+string link
+string msg

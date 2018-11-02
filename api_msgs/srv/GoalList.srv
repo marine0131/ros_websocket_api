@@ -1,0 +1,5 @@
+string mapName
+---
+string list
+string tags
+string msg

@@ -1,0 +1,6 @@
+string mapName
+string goalName
+GridPoint pose
+GridPoint head
+---
+string msg

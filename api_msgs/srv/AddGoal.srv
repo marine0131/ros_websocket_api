@@ -1,0 +1,4 @@
+string mapName
+string goalName
+---
+string msg

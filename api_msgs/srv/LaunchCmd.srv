@@ -1,0 +1,4 @@
+string cmd
+string mapName
+---
+string msg
